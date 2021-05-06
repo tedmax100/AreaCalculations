@@ -7,15 +7,15 @@ namespace Area_Calculations.shapes
 {
     public class Square : IShape
     {
-        private int side;
+        private readonly int _side;
         public Square(int side)
         {
-            this.side = side;
+            this._side = side;
         }
 
         public double GetArea()
         {
-            return this.side * this.side;
+            return this._side * this._side;
         }
     }
 }

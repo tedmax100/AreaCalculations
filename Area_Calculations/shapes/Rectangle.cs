@@ -6,17 +6,17 @@ namespace Area_Calculations.shapes
 {
     public class Rectangle : IShape
     {
-        private int width;
-        private int length;
+        private readonly int _width;
+        private readonly int _length;
         public Rectangle(int width, int length)
         {
-            this.width = width;
-            this.length = length;
+            this._width = width;
+            this._length = length;
         }
 
         public double GetArea()
         {
-            return this.width * this.length;
+            return this._width * this._length;
         }
     }
 }

@@ -6,16 +6,16 @@ namespace Area_Calculations.shapes
 {
     public class Circle : IShape
     {
-        private int radius;
+        private readonly int _radius;
         public Circle(int radius)
         {
-            this.radius = radius;
+            this._radius = radius;
 
         }
 
         public double GetArea()
         {
-            return this.radius * this.radius * 3.14;
+            return this._radius * this._radius * 3.14;
         }
     }
 }
