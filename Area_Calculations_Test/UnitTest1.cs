@@ -17,7 +17,7 @@ namespace Area_Calculations_Test
         [Test]
         public void GetTotalAreaToBeZero()
         {
-            var totalArea = calculator.GetTotalArea();
+            var totalArea = calculator.GetTotalArea(new IShape[] {  });
             Assert.AreEqual(0, totalArea);
         }
 
@@ -25,7 +25,7 @@ namespace Area_Calculations_Test
         public void SquareArea()
         {
             var square = new Square(10);
-            var totalArea = calculator.GetTotalArea(square);
+            var totalArea = calculator.GetTotalArea(new IShape[] { square });
             Assert.AreEqual(100, totalArea);
         }
 
@@ -33,7 +33,7 @@ namespace Area_Calculations_Test
         public void RectangleArea()
         {
             var rectangle = new Rectangle(2,3);
-            var totalArea = calculator.GetTotalArea(rectangle);
+            var totalArea = calculator.GetTotalArea(new IShape[] { rectangle });
             Assert.AreEqual(6, totalArea);
         }
 

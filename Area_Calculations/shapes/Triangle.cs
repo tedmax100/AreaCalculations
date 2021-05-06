@@ -11,13 +11,13 @@ namespace Area_Calculations.shapes
  
         public Triangle(int width, int height)
         {
-            this._width = width;
-            this._height = height;
+            _width = width;
+            _height = height;
         }
 
         public double GetArea()
         {
-            return this._width * this._height  * 0.5;
+            return _width * _height  * 0.5;
         }
     }
 }

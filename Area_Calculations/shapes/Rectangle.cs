@@ -10,13 +10,13 @@ namespace Area_Calculations.shapes
         private readonly int _length;
         public Rectangle(int width, int length)
         {
-            this._width = width;
-            this._length = length;
+            _width = width;
+            _length = length;
         }
 
         public double GetArea()
         {
-            return this._width * this._length;
+            return _width * _length;
         }
     }
 }

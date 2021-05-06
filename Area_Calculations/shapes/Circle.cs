@@ -9,13 +9,13 @@ namespace Area_Calculations.shapes
         private readonly int _radius;
         public Circle(int radius)
         {
-            this._radius = radius;
+            _radius = radius;
 
         }
 
         public double GetArea()
         {
-            return this._radius * this._radius * 3.14;
+            return _radius * _radius * 3.14;
         }
     }
 }
