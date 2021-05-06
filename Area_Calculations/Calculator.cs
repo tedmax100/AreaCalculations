@@ -13,22 +13,6 @@ namespace Area_Calculations
     public class Calculator
     {
         public Calculator() { }
-
-        public double GetTotalArea()
-        {
-            return 0;
-        }
-
-        public double GetTotalArea(Square shape)
-        {
-            return shape.GetArea();
-        }
-
-        public double GetTotalArea(Rectangle shape)
-        {
-            return shape.GetArea();
-        }
-
         public double GetTotalArea(IShape[] shapes)
         {
             double totalArea = 0;
