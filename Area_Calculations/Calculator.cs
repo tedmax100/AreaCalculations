@@ -21,9 +21,9 @@ namespace Area_Calculations
     /// </summary>
     public class Calculator
     {
-        public double GetTotalArea(IShape[] shapes)
+        public double GetTotalArea(params IShape[] shapes)
         {
-            return shapes.Sum(shape => shape.GetArea());
+            return Math.Round(shapes.Sum(shape => shape.GetArea()), 2);
         }
     }
 }

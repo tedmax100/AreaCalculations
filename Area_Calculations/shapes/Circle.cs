@@ -9,6 +9,10 @@ namespace Area_Calculations.shapes
         private readonly int _radius;
         public Circle(int radius)
         {
+            if (radius < 0)
+            {
+                throw new Exception("arguments are small than zero");
+            }
             _radius = radius;
 
         }

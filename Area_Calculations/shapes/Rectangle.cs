@@ -10,6 +10,10 @@ namespace Area_Calculations.shapes
         private readonly int _length;
         public Rectangle(int width, int length)
         {
+            if (width < 0 || length < 0 )
+            {
+                throw new Exception("arguments are small than zero");
+            }
             _width = width;
             _length = length;
         }

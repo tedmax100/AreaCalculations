@@ -9,7 +9,11 @@ namespace Area_Calculations.shapes
     {
         private readonly int _side;
         public Square(int side)
-        {
+        {   
+            if (side < 0 )
+            {
+                throw new Exception("arguments are small than zero");
+            }
             _side = side;
         }
 
